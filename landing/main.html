@@ -3,29 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap css-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Picha</title>
+    <title>Pikcha</title>
     <style>
+        .navbar {
+            height: 75px;
+            background-color: whitesmoke;
+            color: black;
+        }
         .main {
             background-color: #FAE365;
-    
-        }
-        .line {
-            border-color: black;
-            background-color: black;
         }
         .button {
-            display: inline-block;
+            /* display: inline-block; */
             position: relative;
+            background-color: whitesmoke;
+            width: 120px;
             margin: 10px;
-            padding: 0 20px;
+            padding: 20 20px;
             text-align: center;
             text-decoration: none;
-            font: bold 12px/25px Arial, sans-serif;
-            -webkit-border-radius: 30px;
-            -moz-border-radius: 30px;
-            border-radius: 30px;
+            font: bold 15px/25px Arial, sans-serif;
+            border-radius: 50px;
         }
 
 
@@ -33,55 +34,64 @@
     </style>
 </head>
 <body class="main">
-    <nav class="navbar bg-a navbar-light mb-4 navbar-expand-md fixed-top">
-        <a class="navbar-brand" href="#">
-            <img src="https://image.flaticon.com/icons/svg/685/685655.svg" width="40px">
-            <b>picha</b>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse"></div>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#" >About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" >Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">User Cases</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" >Contact</a>
-                </li>
-            </ul>
-            <!-- 검색 버튼 -->
-            <form class="form-inline mt-2 mt-md-0">
-                <button class="btn btn-round my-2 my-sm-0" type="submit">Free Version</button>
-                <button class="btn btn-light rounded my-2 my-sm-0" type="submit">Pro Version</button>
-            </form>
-        </div>
-    </nav>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="https://image.flaticon.com/icons/svg/685/685655.svg" width="40px">
+                    <b><font color="black">pikcha</font></b>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>        
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <div class="p-5">
+                        <ul class="navbar-nav navbar-expand-lg">
+                            <li class="nav-item active p-3">
+                                <a class="nav-link" href="#"><font color=black>About</font></a>
+                            </li>
+                            <li class="nav-item p-3">
+                                <a class="nav-link" href="#"><font color=black>Features</font></a>
+                            </li>
+                            <li class="nav-item p-3">
+                                <a class="nav-link" href="#" ><font color=black>Contact</font></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- select version -->
+                    <div>
+                        <form class="">
+                            <button class="btn btn-light border" type="submit">Free Version</button>
+                            <button class="btn btn-dark" type="submit">Pro Version</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
     <section class="home container mt-5 pt-3">
         <div class="row mt-2 text-center">
-            <div class="col-6 mx-auto">
-                <h1 class="pb-4"><b>내 손으로 만드는<br>
-                    인생사진 프레임<br>
-                    picha</b></h1><br>
-                <h5>딥러닝으로 구현하는 나만의 프레임!<br>
-                따라찍고 싶은 사진을 프레임으로 만들어<br>
-                인생샷을 찍어보세요 </h5>            
-                <button class="button" type="submit">Android</button>
-                <button class="button" type="submit">IOS</button>  
-            </div>
             <div class="col-6">
+                <h1 class="mt-5 pt-4 pb-3"><b>내 손으로 만드는<br>
+                    인생사진 프레임<br>
+                    pikcha</b></h1>
+                <p style="font-size: 90%;">따라찍고 싶은 사진을 프레임으로 만들어<br>
+                평생 남을 인생샷을 찍어보세요!</p>            
+                <button class="btn btn-light" style="width:120px" type="submit">Android</button>
+                <button class="btn btn-light" style="width:120px" type="submit">IOS</button>  
+            </div>
+            <div class="col-6 mt-5">
                 <img src="https://post-phinf.pstatic.net/MjAxOTA1MTZfMTEx/MDAxNTU3OTc0MTY0OTIw.USHN5Id5OOYKs1Ss9sVNYf4TFdX5t6-cHW5wg9kC7Isg.12A3hVCj1T1uTbLvTgSTL5JbStMxIhhtq_hR4eT0ctwg.JPEG/22.jpg?type=w1200" width="500px">
             </div>
         </div>
     </section>
+    <!--footer-->
+    <footer class="page-footer font-small white">
+        <div class="container">
+
+        </div>
+
+    </footer>
    
     
 
