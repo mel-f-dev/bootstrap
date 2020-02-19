@@ -9,12 +9,13 @@
     <title>Pikcha</title>
     <style>
         .navbar {
-            height: 75px;
-            background-color: whitesmoke;
-            color: black;
+            height: 70px;
+            background-color: #FAE365;
         }
         .main {
-            background-color: #FAE365;
+            background-color: whitesmoke;
+            /* background: linear-gradient( to right, yellow, #FAE365 ); */
+
         }
         .button {
             /* display: inline-block; */
@@ -27,6 +28,17 @@
             text-decoration: none;
             font: bold 15px/25px Arial, sans-serif;
             border-radius: 50px;
+        }
+        #ABC {
+            background-color: whitesmoke;
+        }
+        .butback {
+            background-color: #FAE365;
+            border-color: #FAE365;
+            border-style: solid;
+            margin-left: 15px;
+            margin-right: 15px;
+            font-weight: bold;
         }
 
 
@@ -61,7 +73,7 @@
                     <!-- select version -->
                     <div>
                         <form class="">
-                            <button class="btn btn-light border" type="submit">Free Version</button>
+                            <button class="btn btn-light" type="submit">Free Version</button>
                             <button class="btn btn-dark" type="submit">Pro Version</button>
                         </form>
                     </div>
@@ -69,19 +81,19 @@
             </div>
         </nav>
     </header>
-    <section class="home container mt-5 pt-3">
+    <section class="home container mt-5 pt-3" id="ABC">
         <div class="row mt-2 text-center">
             <div class="col-6">
                 <h1 class="mt-5 pt-4 pb-3"><b>내 손으로 만드는<br>
                     인생사진 프레임<br>
                     pikcha</b></h1>
-                <p style="font-size: 90%;">따라찍고 싶은 사진을 프레임으로 만들어<br>
+                <p class="mb-3" style="font-size: 90%;">따라찍고 싶은 사진을 프레임으로 만들어<br>
                 평생 남을 인생샷을 찍어보세요!</p>            
-                <button class="btn btn-light" style="width:120px" type="submit">Android</button>
-                <button class="btn btn-light" style="width:120px" type="submit">IOS</button>  
+                <button class="btn btn-dark m-2" style="width:120px" type="submit">Android</button>
+                <button class="btn btn-dark m-2" style="width:120px" type="submit">IOS</button>  
             </div>
-            <div class="col-6 mt-5">
-                <img src="https://post-phinf.pstatic.net/MjAxOTA1MTZfMTEx/MDAxNTU3OTc0MTY0OTIw.USHN5Id5OOYKs1Ss9sVNYf4TFdX5t6-cHW5wg9kC7Isg.12A3hVCj1T1uTbLvTgSTL5JbStMxIhhtq_hR4eT0ctwg.JPEG/22.jpg?type=w1200" width="500px">
+            <div class="col-6 mt-5 pt-4">
+                <img src="/image/main.png" width="500px">
             </div>
         </div>
     </section>
